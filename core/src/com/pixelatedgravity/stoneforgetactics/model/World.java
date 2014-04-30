@@ -11,7 +11,7 @@ import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 
 public class World {
 	
-	private final static String testMap = "maps/testmap01.tmx"; // Located in the android project's assets folder
+	private final static String testMap = "maps/testmap02.tmx"; // Located in the android project's assets folder
 	
 	private TiledMap map;
 	private List<Entity> entities;
@@ -27,7 +27,7 @@ public class World {
 	}
 	
 	public void createTestMap() {		
-		Entity knight = new Entity(new Texture(Gdx.files.internal("sprites/knight.png")), 2.75f, 3f);
+		Entity knight = new Entity(new Texture(Gdx.files.internal("sprites/guy.png")), 2.75f, 3f);
 		addEntity(knight);
 	}
 

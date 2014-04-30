@@ -8,8 +8,8 @@ import com.pixelatedgravity.stoneforgetactics.view.WorldRenderer;
 
 public class Entity {
 	
-	public Vector2 position;
-	public Texture texture;
+	protected Vector2 position;
+	protected Texture texture;
 	
 	public Entity(Texture texture, float x, float y) {
 		this.texture = texture;

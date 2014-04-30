@@ -10,7 +10,7 @@ public class WorldRenderer {
 	
 	public static final float CAMERA_WIDTH = 10f;	// The screen's width in units
 	public static final float CAMERA_HEIGHT = 6f;	// The screen's height in units
-	public static final float UNIT_SIZE = 32f;		// The number of pixels per unit
+	public static final float UNIT_SIZE = 128f;		// The number of pixels per unit
 	
 	public static float ppuX, ppuY;	// Pixels per unit on the X and Y axis
 	
@@ -27,6 +27,8 @@ public class WorldRenderer {
 		this.height = height;
 		ppuX = (float)width / CAMERA_WIDTH;
 		ppuY = (float)height / CAMERA_HEIGHT;
+		
+		System.out.println("PPUX: " + ppuX + ", PPUY: " + ppuY);
 	}
 
 	public WorldRenderer(World world) {
